@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <div>
+            {{stats}}
+        </div><br/>
+        <div>
+            {% for i  in blocks %}
+                {% for k,v in i.items %}
+                {{k}}: {{v}}<br/>
+            {%endfor%}
+            <br/>
+            {%endfor%}
+        </div>
+    </body>
+</html>
